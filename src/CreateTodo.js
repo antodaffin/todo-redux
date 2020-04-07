@@ -52,7 +52,7 @@ class CreateTodo extends Component {
         {/* <Grid container spacing={3}>
           <Grid item xs={12}>
           */}
-          <p style={{color:"red"}}>{this.state.error?'Error!!! Enter the todo':null}</p>
+          <p style={{color:"red"}}>{this.state.error?'Error!!! Please add the task':null}</p>
             <TextField
               onChange={this.onChangeTodoText}
               value={this.state.todotext}

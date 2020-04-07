@@ -95,14 +95,14 @@ class Tables extends Component {
                     </TableCell>
                     <TableCell component="th" scope="row">
                       
-                    <DeleteIcon
-                        style={{cursor:"pointer"}}
-                        onClick={() => this.props.deleteTodo(todo.id)}
-                      />
                       <CheckCircleOutlineIcon
-                      style={{marginLeft:"20px",cursor:"pointer", color:todo.completed?"green":null}}
+                      style={{cursor:"pointer", color:todo.completed?"green":null}}
 
                         onClick={() => this.props.toggleTodo(todo.id)}
+                      />
+                      <DeleteIcon
+                        style={{marginLeft:"20px",cursor:"pointer"}}
+                        onClick={() => this.props.deleteTodo(todo.id)}
                       />
                     </TableCell>
                   </TableRow>
